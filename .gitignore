@@ -1,0 +1,20 @@
+# ignore all
+/*
+
+# ignore folders
+venv/
+results/
+__pycache__/
+.env
+
+# allow robot framework sources
+!tests/
+!resources/
+!variables/
+!*.robot
+!*.resource
+!*.env.example
+
+# allow root-level configuration files
+!/.gitignore
+!/README.md
