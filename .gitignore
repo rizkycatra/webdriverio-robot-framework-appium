@@ -8,6 +8,7 @@ __pycache__/
 .env
 
 # allow robot framework sources
+!apps/
 !tests/
 !resources/
 !variables/

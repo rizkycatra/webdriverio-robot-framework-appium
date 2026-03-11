@@ -13,3 +13,9 @@ Verify Input Text Field Reflects In Output Label
 Verify Switch Toggle Function Reflects In Output Text
     User Switch The Toggle Button To State    true
     User Switch The Toggle Button To State    false
+
+Verify Select Dropdown Options
+    User Choose The Option From Dropdown And Verify The Option Output    3
+
+Verify The Active Buttons Functionality
+    User Click The Active Buttons
