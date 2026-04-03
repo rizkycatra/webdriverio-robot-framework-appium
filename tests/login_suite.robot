@@ -1,10 +1,10 @@
 *** Settings ***
-Resource    screen_objects/login_keywords.resource
-Suite Setup    Setup Appium Session
-Test Setup    Setup Login Test Environtment
-Test Teardown    User Terminate Application
-Suite Teardown    Close Application
+Resource            screen_objects/login_keywords.resource
 
+Suite Setup         Setup Appium Session
+Suite Teardown      Close Application
+Test Setup          Setup Login Test Environtment
+Test Teardown       User Terminate Application
 
 
 *** Test Cases ***
@@ -13,7 +13,7 @@ Login With Valid Credentials
 
 Login With Invalid Credentials
     [Template]    Login With Invalid Credentials
-    #EMAIL    PASSWORD    ERROR
+    # EMAIL    PASSWORD    ERROR
     rizkytest    validpassword    Please enter a valid email address    ${EMPTY}
     rizkytest@gmail.com    invld    ${EMPTY}    Please enter at least 8 characters
     rizkytest    sadas    Please enter a valid email address    Please enter at least 8 characters

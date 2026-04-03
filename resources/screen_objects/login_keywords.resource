@@ -1,7 +1,7 @@
 *** Settings ***
-Library    AppiumLibrary
-Resource    common_keywords.resource
-Variables    variables/variables.py
+Library         AppiumLibrary
+Resource        common_keywords.resource
+Variables       variables/variables.py
 
 
 *** Keywords ***
@@ -23,8 +23,4 @@ Login With Invalid Credentials
     Input Password    accessibility_id=input-password    ${password}
     Click Element    accessibility_id=button-LOGIN
     Element Should Contain Text    xpath=//android.widget.TextView[@text="${email_error}"]    ${email_error}
-    Element Should Contain Text    xpath=//android.widget.TextView[@text="${password_error}"]   ${password_error}
-
-
-
-    
+    Element Should Contain Text    xpath=//android.widget.TextView[@text="${password_error}"]    ${password_error}

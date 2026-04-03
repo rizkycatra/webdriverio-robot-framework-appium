@@ -1,6 +1,7 @@
 *** Settings ***
-Library    AppiumLibrary
-Variables    ../variables/capabilities.py
+Library         AppiumLibrary
+Variables       ../variables/capabilities.py
+
 
 *** Keywords ***
 Setup Appium Session

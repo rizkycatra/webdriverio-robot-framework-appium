@@ -1,9 +1,11 @@
 *** Settings ***
-Resource    screen_objects/form_keywords.resource
-Suite Setup    Setup Appium Session
-Test Setup    Setup Form Test Environtment
-Test Teardown    User Terminate Application
-Suite Teardown    Close Application
+Resource            screen_objects/form_keywords.resource
+
+Suite Setup         Setup Appium Session
+Suite Teardown      Close Application
+Test Setup          Setup Form Test Environtment
+Test Teardown       User Terminate Application
+
 
 *** Test Cases ***
 Verify Input Text Field Reflects In Output Label
