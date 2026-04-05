@@ -1,4 +1,5 @@
 *** Settings ***
+Library         String
 Library         AppiumLibrary
 Resource        common_keywords.resource
 Variables       variables/variables.py
@@ -6,8 +7,11 @@ Variables       variables/variables.py
 
 *** Keywords ***
 User Signup With Credentials
-    [Arguments]    ${email}    ${password}
     Click Element    xpath=//android.widget.TextView[@text="Sign up"]
+    # create random email and password
+    ${random_string}=    Generate Random String    5    [NUMBERS]
+    ${email}=    Set Variable    rizky_${random_string}@gmail.com
+    ${password}=    Generate Random String    8    [NUMBERS][LETTERS][SPECIALS]
     Input Text    accessibility_id=input-email    ${email}
     Input Password    accessibility_id=input-password    ${password}
     Input Password    accessibility_id=input-repeat-password    ${password}

@@ -10,7 +10,7 @@ Test Teardown       User Terminate Application
 
 *** Test Cases ***
 Signup With Valid Credentials
-    User Signup With Credentials    rizky_test1@gmail.com    12345678
+    User Signup With Credentials
 
 Signup With Invalid Credentials
     [Template]    User Signup With Invalid Credentials

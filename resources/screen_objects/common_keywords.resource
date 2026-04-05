@@ -9,9 +9,11 @@ Setup Appium Session
     ...    automationName=${AUTOMATION_NAME}
     ...    platformName=${PLATFORM_NAME}
     ...    deviceName=${DEVICE_NAME}
+    ...    app=${APP_PATH}
     ...    appPackage=${APP_PACKAGE}
     ...    appActivity=${APP_ACTIVITY}
-    ...    noReset=false
+    ...    noReset=true
+    ...    fullReset=false
 
 Open WebdriverIO Demo Application
     Activate Application    ${APP_PACKAGE}

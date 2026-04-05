@@ -6,9 +6,9 @@ venv/
 results/
 __pycache__/
 .env
+app/*.apk
 
 # allow robot framework sources
-!apps/
 !tests/
 !resources/
 !variables/

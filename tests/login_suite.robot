@@ -9,14 +9,14 @@ Test Teardown       User Terminate Application
 
 *** Test Cases ***
 Login With Valid Credentials
-    User Login With Credentials    rizkytest@gmail.com    zsxszswwewex
+    User Login With Credentials    ${DEFAULT_USER}    ${DEFAULT_PASS}
 
 Login With Invalid Credentials
     [Template]    Login With Invalid Credentials
-    # EMAIL    PASSWORD    ERROR
-    rizkytest    validpassword    Please enter a valid email address    ${EMPTY}
-    rizkytest@gmail.com    invld    ${EMPTY}    Please enter at least 8 characters
-    rizkytest    sadas    Please enter a valid email address    Please enter at least 8 characters
-    ${EMPTY}    validpassword    Please enter a valid email address    ${EMPTY}
-    rizkytest@gmail.com    ${EMPTY}    ${EMPTY}    Please enter at least 8 characters
+    # EMAIL    PASSWORD    EMAIL_ERROR    PASSWORD_ERROR
+    rizkytest    ${DEFAULT_PASS}    Please enter a valid email address    ${EMPTY}
+    ${DEFAULT_USER}    invalid    ${EMPTY}    Please enter at least 8 characters
+    rizkytest    invalid    Please enter a valid email address    Please enter at least 8 characters
+    ${EMPTY}    ${DEFAULT_PASS}    Please enter a valid email address    ${EMPTY}
+    ${DEFAULT_USER}    ${EMPTY}    ${EMPTY}    Please enter at least 8 characters
     ${EMPTY}    ${EMPTY}    Please enter a valid email address    Please enter at least 8 characters
