@@ -1,6 +1,6 @@
 # WebdriverIO Mobile Automation (Robot Framework)
 
-This repository contains a Robot Framework test suite for the [WebDriverIO](https://github.com/webdriverio/native-demo-app/releases) demo app.
+This repository contains a Robot Framework test suite for the [WebDriverIO](https://github.com/webdriverio/native-demo-app/releases) demo app (v2.0.0).
 
 ## Features
 
