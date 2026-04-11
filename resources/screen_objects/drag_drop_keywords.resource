@@ -5,7 +5,7 @@ Variables       variables/variables.py
 
 
 *** Keywords ***
-Setup Drag And Drop Test Environtment
+Setup Drag And Drop Test Environment
     Open WebdriverIO Demo Application
     User Open Menu    Drag
 

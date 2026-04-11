@@ -22,6 +22,10 @@ User Open Menu
     [Arguments]    ${menu}
     Click Element    accessibility_id=${menu}
 
+User Open Side Menu
+    [Arguments]    ${side_menu}
+    Click Element    xpath=//android.widget.TextView[@text="${side_menu}"]
+
 User Terminate Application
     [Documentation]    Kills the app process to reset state for the next test.
     Terminate Application    ${APP_PACKAGE}

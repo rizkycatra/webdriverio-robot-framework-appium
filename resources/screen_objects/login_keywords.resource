@@ -5,7 +5,7 @@ Variables       variables/variables.py
 
 
 *** Keywords ***
-Setup Login Test Environtment
+Setup Login Test Environment
     Open WebdriverIO Demo Application
     User Open Menu    Login
 

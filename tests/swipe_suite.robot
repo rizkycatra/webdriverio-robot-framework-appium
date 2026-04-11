@@ -3,7 +3,7 @@ Resource            screen_objects/swipe_keywords.resource
 
 Suite Setup         Setup Appium Session
 Suite Teardown      Close Application
-Test Setup          Setup Swipe Test Environtment
+Test Setup          Setup Swipe Test Environment
 Test Teardown       User Terminate Application
 
 

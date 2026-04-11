@@ -3,7 +3,7 @@ Resource            screen_objects/form_keywords.resource
 
 Suite Setup         Setup Appium Session
 Suite Teardown      Close Application
-Test Setup          Setup Form Test Environtment
+Test Setup          Setup Form Test Environment
 Test Teardown       User Terminate Application
 
 

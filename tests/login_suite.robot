@@ -3,7 +3,7 @@ Resource            screen_objects/login_keywords.resource
 
 Suite Setup         Setup Appium Session
 Suite Teardown      Close Application
-Test Setup          Setup Login Test Environtment
+Test Setup          Setup Login Test Environment
 Test Teardown       User Terminate Application
 
 

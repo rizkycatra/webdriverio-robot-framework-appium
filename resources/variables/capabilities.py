@@ -6,7 +6,7 @@ load_dotenv()
 #Configuration to start session
 CURRENT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = CURRENT_DIR.parent.parent 
-APP_PATH = os.path.join(PROJECT_ROOT, "app", "android.wdio.native.app.v2.0.0.apk")
+APP_PATH = os.path.join(PROJECT_ROOT, "app", "android.wdio.native.app.v2.2.0.apk")
 
 REMOTE_URL= os.getenv("REMOTE_URL")
 PLATFORM_NAME= 'Android'

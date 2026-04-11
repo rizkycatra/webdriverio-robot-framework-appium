@@ -5,7 +5,7 @@ Variables       variables/variables.py
 
 
 *** Keywords ***
-Setup Form Test Environtment
+Setup Form Test Environment
     Open WebdriverIO Demo Application
     User Open Menu    Forms
 

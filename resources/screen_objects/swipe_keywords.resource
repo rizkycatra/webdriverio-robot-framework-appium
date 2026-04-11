@@ -5,7 +5,7 @@ Variables       variables/variables.py
 
 
 *** Keywords ***
-Setup Swipe Test Environtment
+Setup Swipe Test Environment
     Open WebdriverIO Demo Application
     User Open Menu    Swipe
 
