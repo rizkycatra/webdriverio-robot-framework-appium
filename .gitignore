@@ -19,3 +19,4 @@ app/*.apk
 # allow root-level configuration files
 !/.gitignore
 !/README.md
+!/requirements.txt
