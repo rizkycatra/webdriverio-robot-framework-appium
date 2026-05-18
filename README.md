@@ -8,7 +8,8 @@ This repository contains a Robot Framework test suite for the [WebDriverIO](http
 - User signup
 - Forms input (text, toggle, dropdown)
 - Horizontal and vertical swipe
-- Drag and drop puzzle 
+- Drag and drop puzzle
+- Set Permissions
 
 ## Tech stack
 
