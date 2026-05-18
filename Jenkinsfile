@@ -6,6 +6,7 @@ pipeline {
         DEFAULT_PASS = credentials('DEFAULT_PASS')
         REMOTE_URL   = credentials('REMOTE_URL')
         DEVICE_NAME  = credentials('DEVICE_NAME')
+        APP_PATH     = credentials('APP_PATH')
         APPIUM_PATH  = '/home/rizkycatra/tools/node24/bin/appium'
     }
 
@@ -36,6 +37,7 @@ pipeline {
                     echo "DEFAULT_PASS=${DEFAULT_PASS}" >> .env
                     echo "REMOTE_URL=${REMOTE_URL}" >> .env
                     echo "DEVICE_NAME=${DEVICE_NAME}" >> .env
+                    echo "APP_PATH=${APP_PATH}" >> .env
                 '''
             }
         }
