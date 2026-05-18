@@ -6,6 +6,7 @@ pipeline {
         DEFAULT_PASS = credentials('DEFAULT_PASS')
         REMOTE_URL   = credentials('REMOTE_URL')
         DEVICE_NAME  = credentials('DEVICE_NAME')
+        APPIUM_PATH  = '/home/rizkycatra/tools/node24/bin/appium'
     }
 
     stages {
@@ -56,10 +57,9 @@ pipeline {
                 sh '''#!/bin/bash
                     source venv/bin/activate
                     robot \
-                    --outputdir results \
-                    --variable REMOTE_URL:${REMOTE_URL} \
-                    --variable DEVICE_NAME:${DEVICE_NAME} \
-                    tests/
+                        --pythonpath resources \
+                        --outputdir results \
+                        tests/
                 '''
             }
         }
