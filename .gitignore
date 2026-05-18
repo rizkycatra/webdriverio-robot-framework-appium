@@ -20,3 +20,4 @@ app/*.apk
 !/.gitignore
 !/README.md
 !/requirements.txt
+!/Jenkinsfile
