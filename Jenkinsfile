@@ -20,7 +20,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Activate virtual environment and installing dependencies...'
-                sh '''
+                sh '''#!/bin/bash
                     python3 -m venv venv
                     source venv/bin/activate
                     pip install -r requirements.txt
@@ -30,8 +30,7 @@ pipeline {
 
         stage('Create .env File') {
             steps {
-                echo 'Create .env from Jenkins credentials...'
-                sh '''
+                sh '''#!/bin/bash
                     echo "DEFAULT_USER=${DEFAULT_USER}" > .env
                     echo "DEFAULT_PASS=${DEFAULT_PASS}" >> .env
                     echo "REMOTE_URL=${REMOTE_URL}" >> .env
@@ -43,7 +42,7 @@ pipeline {
         stage('Start Appium Server') {
             steps {
                 echo 'Run Appium server...'
-                sh '''
+                sh '''#!/bin/bash
                     source venv/bin/activate
                     appium --port 4723 --log appium.log &
                     sleep 5
@@ -54,13 +53,13 @@ pipeline {
         stage('Run Tests') {
             steps {
                 echo 'Run the tests...'
-                sh '''
+                sh '''#!/bin/bash
                     source venv/bin/activate
                     robot \
-                        --outputdir results \
-                        --variable REMOTE_URL:${REMOTE_URL} \
-                        --variable DEVICE_NAME:${DEVICE_NAME} \
-                        tests/
+                    --outputdir results \
+                    --variable REMOTE_URL:${REMOTE_URL} \
+                    --variable DEVICE_NAME:${DEVICE_NAME} \
+                    tests/
                 '''
             }
         }
